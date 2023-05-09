@@ -14,6 +14,7 @@ class HomeViewModel: ObservableObject {
     @Published var portfolioCoins: [CoinModel] = []
     @Published var searchtext: String = ""
     @Published var statistics: [StatisticModel] = []
+    @Published var selectedCoin: CoinModel? = nil
     
     private let coinDataService = CoinDataService()
     private let marketDataService = MarketDataService()
