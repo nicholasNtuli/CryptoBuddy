@@ -20,6 +20,8 @@ struct HomeView: View {
             VStack {
                 homeHeader
                 
+                SearchBarView(searchText: $vm.searchtext)
+                
                 columntitles
                 
                 ///push list to the left with some animation
