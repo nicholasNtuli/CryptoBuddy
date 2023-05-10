@@ -9,11 +9,11 @@ import SwiftUI
 
 struct XMarkButton: View {
     
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         Button(action: {
-            presentationMode.wrappedValue.dismiss()
+            dismiss()
             print("button tapped")
         }, label: {
             Image(systemName: "xmark")
@@ -25,5 +25,6 @@ struct XMarkButton: View {
 struct XmarkButton_Previews: PreviewProvider {
     static var previews: some View {
         XMarkButton()
+            .previewLayout(.sizeThatFits)
     }
 }

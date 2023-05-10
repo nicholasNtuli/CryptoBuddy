@@ -10,7 +10,9 @@ import SwiftUI
 struct PortfolioView: View {
     
     @EnvironmentObject private var vm: HomeViewModel
+    @Environment(\.dismiss) var dismiss
     @State private var quantityText: String = ""
+    @State private var showCheckmark: Bool = false
     
     var body: some View {
         NavigationView {
@@ -27,7 +29,10 @@ struct PortfolioView: View {
             .navigationTitle("Edit Portfolio")
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    XMarkButton()
+                    XMarkButton(dismiss: _dismiss)
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    trailingNavBarButton
                 }
             })
         }
@@ -101,5 +106,57 @@ extension PortfolioView {
         .onTapWithAnimation(.none, {})
         .padding()
         .font(.headline)
+    }
+    
+    private var trailingNavBarButton: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "checkmark")
+                .opacity(showCheckmark ? 1.0 : 0.0)
+            Button(action: {
+                saveButtonPressed()
+            }, label: {
+                Text("Save".uppercased())
+            })
+            .opacity(
+                (vm.selectedCoin != nil && vm.selectedCoin?.currentHoldings != Double(quantityText)) ? 1.0 : 0.0)
+        }
+        .font(.headline)
+    }
+    
+    private func saveButtonPressed() {
+        
+        guard let coin = vm.selectedCoin else { return }
+        
+        ///Save to portfolio
+        
+        ///Show checkmark
+        ///onTapWithAnimation(.easeIn {
+        ///showCheckmark = true
+        ///removeSelectedCoin()
+        //})
+        withAnimation(.easeIn) {
+            showCheckmark = true
+            removeSelectedCoin()
+        }
+
+        
+        ///Hide keyboard
+        UIApplication.shared.endEditing()
+        
+        ///Hide checkmark
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            //onTapWithAnimation(.easeOut, {
+            //showCheckmark = false
+            //
+            //})
+            withAnimation(.easeOut) {
+                showCheckmark = false
+            }
+        }
+    }
+    
+    private func removeSelectedCoin() {
+        vm.selectedCoin = nil
+        vm.searchtext = ""
     }
 }
