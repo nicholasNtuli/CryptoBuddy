@@ -12,6 +12,7 @@ import Combine
 class CoinImageService {
     
     @Published var image: UIImage? = nil
+    
     private var imageSubscription: AnyCancellable?
     private let coin: CoinModel
     private let fileManger = LocalFileManager.instance
