@@ -18,7 +18,6 @@ struct DetailLoadingView: View {
             }
         }
     }
-    
 }
 
 struct DetailView: View {

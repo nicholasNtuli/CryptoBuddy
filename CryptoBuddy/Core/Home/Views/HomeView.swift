@@ -102,9 +102,6 @@ extension HomeView {
                     .onTapGesture {
                         segue(coin: coin)
                     }
-//                    .onTapWithAnimation(.none, {
-//                        segue(coin: coin)
-//                    })
                     .listRowBackground(Color.theme.background)
             }
         }
@@ -119,9 +116,6 @@ extension HomeView {
                     .onTapGesture {
                         segue(coin: coin)
                     }
-//                    .onTapWithAnimation(.none, {
-//                        segue(coin: coin)
-//                    })
                     .listRowBackground(Color.theme.background)
             }
         }
@@ -138,7 +132,7 @@ extension HomeView {
     }
     
     private func segue(coin: CoinModel) {
-        vm.selectedCoin = coin
+        selectedCoin = coin
         showDetailView.toggle()
     }
     
