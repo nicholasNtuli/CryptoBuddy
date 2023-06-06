@@ -44,12 +44,9 @@ struct HomeView: View {
                 Spacer(minLength: 0)
             }
         }
-        .background(
-            NavigationLink(
-                destination: DetailLoadingView(coin: $selectedCoin),
-                isActive: $showDetailView,
-                label: { EmptyView() })
-        )
+        .navigationDestination(isPresented: $showDetailView, destination: {
+            DetailLoadingView(coin: $selectedCoin)
+        })
     }
 }
 
@@ -69,7 +66,7 @@ extension HomeView {
     private var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
-            //                .onTapWithAnimation(.none, {})
+            // .onTapWithAnimation(.none, {})
                 .onTapGesture {
                     if showPortfolio {
                         showPortfolioView.toggle()

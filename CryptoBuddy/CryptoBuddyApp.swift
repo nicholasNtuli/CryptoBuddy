@@ -19,7 +19,7 @@ struct CryptoBuddyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
+            NavigationStack {
                 HomeView()
                     .navigationBarHidden(true)
             }
