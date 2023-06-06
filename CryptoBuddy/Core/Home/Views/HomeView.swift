@@ -70,10 +70,6 @@ extension HomeView {
     private var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
-<<<<<<< Updated upstream
-            // .onTapWithAnimation(.none, {})
-=======
->>>>>>> Stashed changes
                 .onTapGesture {
                     if showPortfolio {
                         showPortfolioView.toggle()
