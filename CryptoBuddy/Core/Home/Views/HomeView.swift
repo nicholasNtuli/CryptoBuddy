@@ -14,6 +14,7 @@ struct HomeView: View {
     @State private var showPortfolioView: Bool = false ///Show a new sheet
     @State private var selectedCoin: CoinModel? = nil
     @State private var showDetailView: Bool = false
+    @State private var showSettingsView: Bool = false
     
     var body: some View {
         ZStack {
@@ -43,6 +44,9 @@ struct HomeView: View {
                 
                 Spacer(minLength: 0)
             }
+            .sheet(isPresented: $showSettingsView, content: {
+                SettingView(vm: SettingsViwModel())
+            })
         }
         .navigationDestination(isPresented: $showDetailView, destination: {
             DetailLoadingView(coin: $selectedCoin)
@@ -66,10 +70,15 @@ extension HomeView {
     private var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
+<<<<<<< Updated upstream
             // .onTapWithAnimation(.none, {})
+=======
+>>>>>>> Stashed changes
                 .onTapGesture {
                     if showPortfolio {
                         showPortfolioView.toggle()
+                    } else {
+                        showSettingsView.toggle()
                     }
                 }
                 .background(
