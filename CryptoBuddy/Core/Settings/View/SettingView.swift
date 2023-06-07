@@ -13,18 +13,29 @@ struct SettingView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                aboutAppSection
-                coinGeckoSection
-                developerSection
-                applicationSection
+            ZStack {
+                // background
+                Color.theme.background
+                    .ignoresSafeArea()
+                
+                // content
+                List {
+                    aboutAppSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    coinGeckoSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    developerSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                    applicationSection
+                        .listRowBackground(Color.theme.background.opacity(0.5))
+                }
             }
             .font(.headline)
             .accentColor(.blue)
             .listStyle(GroupedListStyle())
             .navigationTitle("Settings")
             .toolbar {
-                ToolbarItem(placement: .navigation) {
+                ToolbarItem(placement: .navigationBarLeading) {
                     XMarkButton()
                 }
             }

@@ -84,7 +84,7 @@ extension HomeView {
                     }
                 }
                 .background(
-                    CircelButtonAnimationView(animate: $showPortfolio)
+                    CircleButtonAnimationView(animate: $showPortfolio)
                 )
             Spacer()
             Text(showPortfolio ? "Portfolio" : "Live Prices")
