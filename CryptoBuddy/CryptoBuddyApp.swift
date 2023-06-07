@@ -25,6 +25,7 @@ struct CryptoBuddyApp: App {
                     HomeView()
                         .navigationBarHidden(true)
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 .environmentObject(vm)
                 
                 /// After looping through the lauch screen the showLaunchView will be set to false and the rest off the app will apprear

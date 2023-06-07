@@ -20,7 +20,6 @@
 		5813986C2A0C23840028289C /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5813986B2A0C23840028289C /* PortfolioDataService.swift */; };
 		5813986E2A0D703A0028289C /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5813986D2A0D703A0028289C /* HapticManager.swift */; };
 		582DC4CC29F6948600767B69 /* CryptoBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DC4CB29F6948600767B69 /* CryptoBuddyApp.swift */; };
-		582DC4CE29F6948600767B69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DC4CD29F6948600767B69 /* ContentView.swift */; };
 		582DC4D029F6948800767B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582DC4CF29F6948800767B69 /* Assets.xcassets */; };
 		582DC4D329F6948800767B69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582DC4D229F6948800767B69 /* Preview Assets.xcassets */; };
 		5838E1092A0F659000AE5CDC /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5838E1082A0F659000AE5CDC /* CoinDetailModel.swift */; };
@@ -68,7 +67,6 @@
 		5813986D2A0D703A0028289C /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		582DC4C829F6948600767B69 /* CryptoBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582DC4CB29F6948600767B69 /* CryptoBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoBuddyApp.swift; sourceTree = "<group>"; };
-		582DC4CD29F6948600767B69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		582DC4CF29F6948800767B69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		582DC4D229F6948800767B69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5838E1082A0F659000AE5CDC /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				58065A232A02D56D0048958E /* Services */,
 				58F2FDBB29F6B06E0068B276 /* Models */,
 				58F2FDAD29F69ACB0068B276 /* Core */,
-				582DC4CD29F6948600767B69 /* ContentView.swift */,
 				582DC4CF29F6948800767B69 /* Assets.xcassets */,
 				582DC4D129F6948800767B69 /* Preview Content */,
 			);
@@ -415,7 +412,6 @@
 				586468962A0AC38600EBB256 /* StatisticModel.swift in Sources */,
 				5813986E2A0D703A0028289C /* HapticManager.swift in Sources */,
 				5838E10D2A0F699600AE5CDC /* CoinDetailDataService.swift in Sources */,
-				582DC4CE29F6948600767B69 /* ContentView.swift in Sources */,
 				58F2FDB229F69B150068B276 /* HomeView.swift in Sources */,
 				582DC4CC29F6948600767B69 /* CryptoBuddyApp.swift in Sources */,
 				5864689E2A0AD2C100EBB256 /* MarketDataService.swift in Sources */,
