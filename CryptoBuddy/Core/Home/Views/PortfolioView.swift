@@ -161,6 +161,7 @@ extension PortfolioView {
         withAnimation(.easeIn) {
             showCheckmark = true
             removeSelectedCoin()
+            dismiss()
         }
 
         
