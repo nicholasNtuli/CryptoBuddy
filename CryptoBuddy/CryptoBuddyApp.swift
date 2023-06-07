@@ -11,6 +11,7 @@ import SwiftUI
 struct CryptoBuddyApp: App {
     
     @StateObject private var vm = HomeViewModel()
+    @State private var showLaunchView: Bool = true
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor : UIColor(Color.theme.accent)]
@@ -26,7 +27,14 @@ struct CryptoBuddyApp: App {
                 }
                 .environmentObject(vm)
                 
-                LaunchView()
+                /// After looping through the lauch screen the showLaunchView will be set to false and the rest off the app will apprear
+                ZStack {
+                    if showLaunchView {
+                        LaunchView(showLaunchView: $showLaunchView)
+                            .transition(.move(edge: .leading))
+                    }
+                }
+                .zIndex(2.0)
             }
         }
     }
