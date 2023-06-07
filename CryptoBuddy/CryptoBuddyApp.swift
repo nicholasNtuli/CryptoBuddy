@@ -19,11 +19,15 @@ struct CryptoBuddyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                HomeView()
-                    .navigationBarHidden(true)
+            ZStack {
+                NavigationStack {
+                    HomeView()
+                        .navigationBarHidden(true)
+                }
+                .environmentObject(vm)
+                
+                LaunchView()
             }
-            .environmentObject(vm)
         }
     }
 }
