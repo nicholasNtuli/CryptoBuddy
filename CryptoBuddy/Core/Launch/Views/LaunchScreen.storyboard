@@ -25,8 +25,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaA-aF-1ys">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-transparent" translatesAutoresizingMaskIntoConstraints="NO" id="WyJ-Ou-oD6">
-                                        <rect key="frame" x="146" y="375" width="100" height="100"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-transparent3" translatesAutoresizingMaskIntoConstraints="NO" id="WyJ-Ou-oD6">
+                                        <rect key="frame" x="146.66666666666666" y="375" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="6zi-Lj-6bj"/>
                                             <constraint firstAttribute="height" constant="100" id="JQa-b8-UJj"/>
@@ -59,7 +59,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-transparent" width="100" height="100"/>
+        <image name="logo-transparent3" width="500" height="500"/>
         <namedColor name="LaunchBackgroundColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

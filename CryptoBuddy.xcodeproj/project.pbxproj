@@ -50,7 +50,41 @@
 		58F2FDB829F6A3E40068B276 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2FDB729F6A3E40068B276 /* CircleButtonAnimationView.swift */; };
 		58F2FDBA29F6A54F0068B276 /* TapGestureAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2FDB929F6A54F0068B276 /* TapGestureAnimation.swift */; };
 		58F2FDBD29F6B1480068B276 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2FDBC29F6B1480068B276 /* CoinModel.swift */; };
+		58FD1A742A365C0200DE02D0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FD1A732A365C0100DE02D0 /* WidgetKit.framework */; };
+		58FD1A762A365C0200DE02D0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FD1A752A365C0200DE02D0 /* SwiftUI.framework */; };
+		58FD1A792A365C0200DE02D0 /* CryptoBuddyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD1A782A365C0200DE02D0 /* CryptoBuddyWidgetBundle.swift */; };
+		58FD1A7B2A365C0200DE02D0 /* CryptoBuddyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD1A7A2A365C0200DE02D0 /* CryptoBuddyWidget.swift */; };
+		58FD1A7D2A365C0400DE02D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58FD1A7C2A365C0400DE02D0 /* Assets.xcassets */; };
+		58FD1A812A365C0400DE02D0 /* CryptoBuddyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 58FD1A712A365C0100DE02D0 /* CryptoBuddyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		58FD1A8B2A36627300DE02D0 /* WidgetCoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD1A892A36627000DE02D0 /* WidgetCoinModel.swift */; };
+		58FD1A8E2A36727400DE02D0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2FDAB29F698020068B276 /* Color.swift */; };
+		58FD1A8F2A36743500DE02D0 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58065A1E2A02B29F0048958E /* Double.swift */; };
+		58FD1A922A367A2B00DE02D0 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F2FDBC29F6B1480068B276 /* CoinModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58FD1A7F2A365C0400DE02D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 582DC4C029F6948600767B69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58FD1A702A365C0100DE02D0;
+			remoteInfo = CryptoBuddyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58FD1A822A365C0500DE02D0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				58FD1A812A365C0400DE02D0 /* CryptoBuddyWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		58065A1A2A02AEB50048958E /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
@@ -97,6 +131,14 @@
 		58F2FDB729F6A3E40068B276 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		58F2FDB929F6A54F0068B276 /* TapGestureAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureAnimation.swift; sourceTree = "<group>"; };
 		58F2FDBC29F6B1480068B276 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		58FD1A712A365C0100DE02D0 /* CryptoBuddyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CryptoBuddyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FD1A732A365C0100DE02D0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		58FD1A752A365C0200DE02D0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		58FD1A782A365C0200DE02D0 /* CryptoBuddyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoBuddyWidgetBundle.swift; sourceTree = "<group>"; };
+		58FD1A7A2A365C0200DE02D0 /* CryptoBuddyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoBuddyWidget.swift; sourceTree = "<group>"; };
+		58FD1A7C2A365C0400DE02D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58FD1A7E2A365C0400DE02D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FD1A892A36627000DE02D0 /* WidgetCoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetCoinModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +146,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FD1A6E2A365C0100DE02D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FD1A762A365C0200DE02D0 /* SwiftUI.framework in Frameworks */,
+				58FD1A742A365C0200DE02D0 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				582DC4CA29F6948600767B69 /* CryptoBuddy */,
+				58FD1A772A365C0200DE02D0 /* CryptoBuddyWidget */,
+				58FD1A722A365C0100DE02D0 /* Frameworks */,
 				582DC4C929F6948600767B69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -154,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				582DC4C829F6948600767B69 /* CryptoBuddy.app */,
+				58FD1A712A365C0100DE02D0 /* CryptoBuddyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -332,8 +386,29 @@
 				586468952A0AC38600EBB256 /* StatisticModel.swift */,
 				5864689B2A0ACFAB00EBB256 /* MarketDataModel.swift */,
 				581398682A0C22940028289C /* PortfolioContainer.xcdatamodeld */,
+				58FD1A892A36627000DE02D0 /* WidgetCoinModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		58FD1A722A365C0100DE02D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58FD1A732A365C0100DE02D0 /* WidgetKit.framework */,
+				58FD1A752A365C0200DE02D0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58FD1A772A365C0200DE02D0 /* CryptoBuddyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				58FD1A782A365C0200DE02D0 /* CryptoBuddyWidgetBundle.swift */,
+				58FD1A7A2A365C0200DE02D0 /* CryptoBuddyWidget.swift */,
+				58FD1A7C2A365C0400DE02D0 /* Assets.xcassets */,
+				58FD1A7E2A365C0400DE02D0 /* Info.plist */,
+			);
+			path = CryptoBuddyWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,15 +421,34 @@
 				582DC4C429F6948600767B69 /* Sources */,
 				582DC4C529F6948600767B69 /* Frameworks */,
 				582DC4C629F6948600767B69 /* Resources */,
+				58FD1A822A365C0500DE02D0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				58FD1A802A365C0400DE02D0 /* PBXTargetDependency */,
 			);
 			name = CryptoBuddy;
 			productName = CryptoBuddy;
 			productReference = 582DC4C829F6948600767B69 /* CryptoBuddy.app */;
 			productType = "com.apple.product-type.application";
+		};
+		58FD1A702A365C0100DE02D0 /* CryptoBuddyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58FD1A852A365C0500DE02D0 /* Build configuration list for PBXNativeTarget "CryptoBuddyWidgetExtension" */;
+			buildPhases = (
+				58FD1A6D2A365C0100DE02D0 /* Sources */,
+				58FD1A6E2A365C0100DE02D0 /* Frameworks */,
+				58FD1A6F2A365C0100DE02D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoBuddyWidgetExtension;
+			productName = CryptoBuddyWidgetExtension;
+			productReference = 58FD1A712A365C0100DE02D0 /* CryptoBuddyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -363,11 +457,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					582DC4C729F6948600767B69 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					58FD1A702A365C0100DE02D0 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -385,6 +482,7 @@
 			projectRoot = "";
 			targets = (
 				582DC4C729F6948600767B69 /* CryptoBuddy */,
+				58FD1A702A365C0100DE02D0 /* CryptoBuddyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -397,6 +495,14 @@
 				58F0C8DB2A2FCD97005C24E1 /* LaunchScreen.storyboard in Resources */,
 				582DC4D329F6948800767B69 /* Preview Assets.xcassets in Resources */,
 				582DC4D029F6948800767B69 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FD1A6F2A365C0100DE02D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FD1A7D2A365C0400DE02D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +556,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58FD1A6D2A365C0100DE02D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FD1A792A365C0200DE02D0 /* CryptoBuddyWidgetBundle.swift in Sources */,
+				58FD1A8E2A36727400DE02D0 /* Color.swift in Sources */,
+				58FD1A7B2A365C0200DE02D0 /* CryptoBuddyWidget.swift in Sources */,
+				58FD1A8F2A36743500DE02D0 /* Double.swift in Sources */,
+				58FD1A922A367A2B00DE02D0 /* CoinModel.swift in Sources */,
+				58FD1A8B2A36627300DE02D0 /* WidgetCoinModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58FD1A802A365C0400DE02D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58FD1A702A365C0100DE02D0 /* CryptoBuddyWidgetExtension */;
+			targetProxy = 58FD1A7F2A365C0400DE02D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		582DC4D429F6948800767B69 /* Debug */ = {
@@ -570,6 +697,7 @@
 		582DC4D729F6948800767B69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +729,7 @@
 		582DC4D829F6948800767B69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -629,6 +758,62 @@
 			};
 			name = Release;
 		};
+		58FD1A832A365C0500DE02D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GNWJZ9ZPJP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoBuddyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoBuddyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.CryptoBuddy.CryptoBuddyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58FD1A842A365C0500DE02D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GNWJZ9ZPJP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CryptoBuddyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoBuddyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.CryptoBuddy.CryptoBuddyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -646,6 +831,15 @@
 			buildConfigurations = (
 				582DC4D729F6948800767B69 /* Debug */,
 				582DC4D829F6948800767B69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58FD1A852A365C0500DE02D0 /* Build configuration list for PBXNativeTarget "CryptoBuddyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FD1A832A365C0500DE02D0 /* Debug */,
+				58FD1A842A365C0500DE02D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

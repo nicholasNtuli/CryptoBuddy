@@ -52,7 +52,7 @@ struct SettingView_Previews: PreviewProvider {
 extension SettingView {
     
     private var aboutAppSection: some View {
-        Section(header: Text("Swiftful Thinking")) {
+        Section(header: Text("Crypto Buddy")) {
             VStack(alignment: .leading) {
                 Image("logo")
                     .resizable()

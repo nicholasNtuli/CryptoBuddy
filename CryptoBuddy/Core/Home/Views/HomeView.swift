@@ -126,6 +126,7 @@ extension HomeView {
                     }
                     .listRowBackground(Color.theme.background)
             }
+            
         }
         .listStyle(PlainListStyle())
     }

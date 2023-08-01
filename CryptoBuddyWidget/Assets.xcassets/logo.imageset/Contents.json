@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "cryptoBuddyLogo.png",
+      "filename" : "logo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "cryptoBuddyLogo@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "cryptoBuddyLogo@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
